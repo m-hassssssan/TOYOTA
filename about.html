@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | TOYOTA</title>
+  <meta name="description" content="Learn about Toyota's history, mission, and commitment to innovation">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-logo">TOYOTA</div>
+    <div class="preloader-text">OUR STORY...</div>
+    <div class="loading-bar">
+      <div class="loading-progress"></div>
+    </div>
+  </div>
+
+  <div class="scanline"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">TOYOTA</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cars.html">Vehicles</a></li>
+      <li><a href="parts.html">Parts</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Join Us</a>
+    <div class="mobile-menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="cars.html">Vehicles</a>
+    <a href="parts.html">Parts</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- About Hero -->
+  <section class="about-hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-particles"></div>
+    
+    <div class="about-content">
+      <div class="about-text reveal-left">
+        <p class="section-subtitle">Our Story</p>
+        <h2 style="font-family: 'Orbitron', sans-serif; font-size: clamp(2rem, 5vw, 4rem); font-weight: 700; margin-bottom: 1.5rem;">
+          DRIVING <span style="color: var(--toyota-red);">INNOVATION</span> SINCE 1937
+        </h2>
+        <p>
+          From our humble beginnings in a small Japanese loom works to becoming one of the world's 
+          largest automakers, Toyota has always been driven by a simple philosophy: continuous improvement 
+          and respect for people.
+        </p>
+        <p>
+          Today, we're not just building cars—we're shaping the future of mobility. With a commitment 
+          to sustainability, safety, and cutting-edge technology, we're creating vehicles that inspire 
+          and empower people around the globe.
+        </p>
+        <div style="display: flex; gap: 3rem; margin-top: 2rem; flex-wrap: wrap;">
+          <div>
+            <p style="font-family: 'Orbitron', sans-serif; font-size: 3rem; font-weight: 700; color: var(--toyota-red);">80+</p>
+            <p style="color: var(--toyota-silver);">Years of Excellence</p>
+          </div>
+          <div>
+            <p style="font-family: 'Orbitron', sans-serif; font-size: 3rem; font-weight: 700; color: var(--toyota-red);">10M+</p>
+            <p style="color: var(--toyota-silver);">Vehicles Sold Yearly</p>
+          </div>
+          <div>
+            <p style="font-family: 'Orbitron', sans-serif; font-size: 3rem; font-weight: 700; color: var(--toyota-red);">170+</p>
+            <p style="color: var(--toyota-silver);">Countries Served</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-image reveal-right">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80" alt="Toyota Headquarters">
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="section" style="background: linear-gradient(180deg, #0f0f0f 0%, var(--toyota-dark) 100%);">
+    <div class="section-header reveal">
+      <p class="section-subtitle">Our Purpose</p>
+      <h2 class="section-title">MISSION & VISION</h2>
+    </div>
+
+    <div style="max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem;">
+      <div class="reveal" style="background: linear-gradient(145deg, #1e1e1e, #151515); padding: 3rem; border-radius: 20px; border-left: 4px solid var(--toyota-red);">
+        <i class="fas fa-bullseye" style="font-size: 3rem; color: var(--toyota-red); margin-bottom: 1.5rem;"></i>
+        <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.8rem; margin-bottom: 1rem;">OUR MISSION</h3>
+        <p style="color: var(--toyota-silver); line-height: 1.8; font-size: 1.1rem;">
+          To attract and attain customers with high-valued products and services and the most satisfying 
+          ownership experience in America. We strive to exceed expectations and build lasting relationships 
+          with every customer.
+        </p>
+      </div>
+
+      <div class="reveal stagger-1" style="background: linear-gradient(145deg, #1e1e1e, #151515); padding: 3rem; border-radius: 20px; border-left: 4px solid var(--toyota-red);">
+        <i class="fas fa-eye" style="font-size: 3rem; color: var(--toyota-red); margin-bottom: 1.5rem;"></i>
+        <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.8rem; margin-bottom: 1rem;">OUR VISION</h3>
+        <p style="color: var(--toyota-silver); line-height: 1.8; font-size: 1.1rem;">
+          To be the most respected and admired car company in America, leading the way in sustainable 
+          mobility and creating a better society through innovative technology and environmental stewardship.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="timeline">
+    <div class="section-header reveal">
+      <p class="section-subtitle">Our Journey</p>
+      <h2 class="section-title">HISTORY OF EXCELLENCE</h2>
+    </div>
+
+    <div class="timeline-container">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <p class="timeline-year">1937</p>
+          <h3 style="font-family: 'Orbitron', sans-serif; margin-bottom: 0.5rem;">THE BEGINNING</h3>
+          <p style="color: var(--toyota-silver);">Kiichiro Toyoda establishes Toyota Motor Corporation, spinning off from his father's loom manufacturing business.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <p class="timeline-year">1957</p>
+          <h3 style="font-family: 'Orbitron', sans-serif; margin-bottom: 0.5rem;">ENTERING AMERICA</h3>
+          <p style="color: var(--toyota-silver);">Toyota establishes its first presence in the United States with Toyota Motor Sales, USA.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <p class="timeline-year">1966</p>
+          <h3 style="font-family: 'Orbitron', sans-serif; margin-bottom: 0.5rem;">COROLLA LAUNCH</h3>
+          <p style="color: var(--toyota-silver);">The Toyota Corolla is introduced, destined to become the best-selling car of all time.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <p class="timeline-year">1997</p>
+          <h3 style="font-family: 'Orbitron', sans-serif; margin-bottom: 0.5rem;">HYBRID REVOLUTION</h3>
+          <p style="color: var(--toyota-silver);">The Prius becomes the world's first mass-produced hybrid vehicle, changing the automotive landscape forever.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <p class="timeline-year">2009</p>
+          <h3 style="font-family: 'Orbitron', sans-serif; margin-bottom: 0.5rem;">WORLD'S LARGEST</h3>
+          <p style="color: var(--toyota-silver);">Toyota becomes the world's largest automaker, a testament to quality and customer trust.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <p class="timeline-year">2020</p>
+          <h3 style="font-family: 'Orbitron', sans-serif; margin-bottom: 0.5rem;">ELECTRIC FUTURE</h3>
+          <p style="color: var(--toyota-silver);">Launch of the Toyota bZ series, marking our commitment to a fully electrified future.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <p class="timeline-year">TODAY</p>
+          <h3 style="font-family: 'Orbitron', sans-serif; margin-bottom: 0.5rem;">INNOVATION CONTINUES</h3>
+          <p style="color: var(--toyota-silver);">Leading the industry in hydrogen fuel cell technology, autonomous driving, and sustainable manufacturing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section class="section" style="background: linear-gradient(180deg, var(--toyota-dark) 0%, #0f0f0f 100%);">
+    <div class="section-header reveal">
+      <p class="section-subtitle">What We Stand For</p>
+      <h2 class="section-title">CORE VALUES</h2>
+    </div>
+
+    <div style="max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+      <div class="reveal" style="text-align: center; padding: 2rem;">
+        <div style="width: 100px; height: 100px; background: linear-gradient(135deg, var(--toyota-red), #ff4757); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2.5rem;">
+          <i class="fas fa-star" style="color: white;"></i>
+        </div>
+        <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.3rem; margin-bottom: 1rem;">QUALITY</h3>
+        <p style="color: var(--toyota-silver); line-height: 1.8;">Never compromise on the excellence our customers deserve.</p>
+      </div>
+
+      <div class="reveal stagger-1" style="text-align: center; padding: 2rem;">
+        <div style="width: 100px; height: 100px; background: linear-gradient(135deg, var(--toyota-red), #ff4757); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2.5rem;">
+          <i class="fas fa-lightbulb" style="color: white;"></i>
+        </div>
+        <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.3rem; margin-bottom: 1rem;">INNOVATION</h3>
+        <p style="color: var(--toyota-silver); line-height: 1.8;">Constantly push boundaries to create the future of mobility.</p>
+      </div>
+
+      <div class="reveal stagger-2" style="text-align: center; padding: 2rem;">
+        <div style="width: 100px; height: 100px; background: linear-gradient(135deg, var(--toyota-red), #ff4757); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2.5rem;">
+          <i class="fas fa-leaf" style="color: white;"></i>
+        </div>
+        <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.3rem; margin-bottom: 1rem;">SUSTAINABILITY</h3>
+        <p style="color: var(--toyota-silver); line-height: 1.8;">Commit to environmental stewardship in everything we do.</p>
+      </div>
+
+      <div class="reveal stagger-3" style="text-align: center; padding: 2rem;">
+        <div style="width: 100px; height: 100px; background: linear-gradient(135deg, var(--toyota-red), #ff4757); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2.5rem;">
+          <i class="fas fa-users" style="color: white;"></i>
+        </div>
+        <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.3rem; margin-bottom: 1rem;">RESPECT</h3>
+        <p style="color: var(--toyota-silver); line-height: 1.8;">Value our customers, employees, and communities worldwide.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership -->
+  <section class="section" style="background: linear-gradient(180deg, #0f0f0f 0%, var(--toyota-dark) 100%);">
+    <div class="section-header reveal">
+      <p class="section-subtitle">Our Team</p>
+      <h2 class="section-title">LEADERSHIP</h2>
+    </div>
+
+    <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+      <div class="reveal" style="background: linear-gradient(145deg, #1e1e1e, #151515); border-radius: 20px; overflow: hidden; text-align: center;">
+        <div style="height: 300px; overflow: hidden;">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80" alt="CEO" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div style="padding: 2rem;">
+          <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.3rem; margin-bottom: 0.5rem;">AKIO TOYODA</h3>
+          <p style="color: var(--toyota-red); margin-bottom: 1rem;">President & CEO</p>
+          <p style="color: var(--toyota-silver);">Leading Toyota into the future of mobility with passion and innovation.</p>
+        </div>
+      </div>
+
+      <div class="reveal stagger-1" style="background: linear-gradient(145deg, #1e1e1e, #151515); border-radius: 20px; overflow: hidden; text-align: center;">
+        <div style="height: 300px; overflow: hidden;">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80" alt="Executive" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div style="padding: 2rem;">
+          <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.3rem; margin-bottom: 0.5rem;">SUSAN ELIZABETH</h3>
+          <p style="color: var(--toyota-red); margin-bottom: 1rem;">Chief Operating Officer</p>
+          <p style="color: var(--toyota-silver);">Driving operational excellence across global markets.</p>
+        </div>
+      </div>
+
+      <div class="reveal stagger-2" style="background: linear-gradient(145deg, #1e1e1e, #151515); border-radius: 20px; overflow: hidden; text-align: center;">
+        <div style="height: 300px; overflow: hidden;">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&q=80" alt="Executive" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div style="padding: 2rem;">
+          <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.3rem; margin-bottom: 0.5rem;">JAMES MITCHELL</h3>
+          <p style="color: var(--toyota-red); margin-bottom: 1rem;">Chief Technology Officer</p>
+          <p style="color: var(--toyota-silver);">Pioneering the next generation of automotive technology.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="background: linear-gradient(135deg, var(--toyota-red) 0%, #c41e3a 100%); text-align: center;">
+    <div class="reveal">
+      <h2 style="font-family: 'Orbitron', sans-serif; font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1.5rem;">JOIN THE TOYOTA FAMILY</h2>
+      <p style="font-size: 1.2rem; margin-bottom: 2.5rem; opacity: 0.9;">Be part of our journey towards a better future</p>
+      <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html" class="btn" style="background: white; color: var(--toyota-red); border-color: white;">Contact Us</a>
+        <a href="careers.html" class="btn" style="background: transparent; color: white; border: 2px solid white;">Careers</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>TOYOTA</h3>
+        <p>Let's Go Places. Building the future of mobility since 1937.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Vehicles</h4>
+        <ul>
+          <li><a href="cars.html">All Vehicles</a></li>
+          <li><a href="cars.html">SUVs</a></li>
+          <li><a href="cars.html">Trucks</a></li>
+          <li><a href="cars.html">Sports Cars</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="services.html">Service Center</a></li>
+          <li><a href="parts.html">Genuine Parts</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:1-800-TOYOTA">1-800-TOYOTA</a></li>
+          <li><a href="mailto:info@toyota.com">info@toyota.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Toyota Motor Corporation. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/animations.js"></script>
+</body>
+</html>

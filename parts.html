@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genuine Parts | TOYOTA</title>
+  <meta name="description" content="Genuine Toyota parts and accessories for your vehicle">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-logo">TOYOTA</div>
+    <div class="preloader-text">LOADING PARTS...</div>
+    <div class="loading-bar">
+      <div class="loading-progress"></div>
+    </div>
+  </div>
+
+  <div class="scanline"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">TOYOTA</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cars.html">Vehicles</a></li>
+      <li><a href="parts.html">Parts</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Find a Dealer</a>
+    <div class="mobile-menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="cars.html">Vehicles</a>
+    <a href="parts.html">Parts</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Parts Hero -->
+  <section class="parts-hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-particles"></div>
+    
+    <div class="hero-content">
+      <p class="hero-subtitle">Genuine Quality</p>
+      <h1 class="hero-title glitch" data-text="PARTS">
+        <span>GENUINE</span>
+        <span class="highlight">TOYOTA PARTS</span>
+      </h1>
+      <p class="hero-description">
+        Keep your Toyota running like new with authentic parts and accessories 
+        designed specifically for your vehicle.
+      </p>
+      <div class="hero-buttons">
+        <a href="#parts-catalog" class="btn btn-primary">Browse Catalog</a>
+        <a href="contact.html" class="btn btn-secondary">Find a Dealer</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Genuine Parts -->
+  <section class="section" style="background: linear-gradient(180deg, var(--toyota-dark) 0%, #0f0f0f 100%);">
+    <div class="section-header reveal">
+      <p class="section-subtitle">Quality Assurance</p>
+      <h2 class="section-title">WHY GENUINE PARTS?</h2>
+    </div>
+
+    <div style="max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+      <div class="reveal" style="background: linear-gradient(145deg, #1e1e1e, #151515); padding: 2.5rem; border-radius: 20px; text-align: center; border: 1px solid rgba(255,255,255,0.05);">
+        <div style="width: 80px; height: 80px; background: var(--toyota-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">
+          <i class="fas fa-certificate" style="color: white;"></i>
+        </div>
+        <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.3rem; margin-bottom: 1rem;">PERFECT FIT</h3>
+        <p style="color: var(--toyota-silver); line-height: 1.8;">Engineered specifically for your Toyota model, ensuring perfect fit and optimal performance every time.</p>
+      </div>
+
+      <div class="reveal stagger-1" style="background: linear-gradient(145deg, #1e1e1e, #151515); padding: 2.5rem; border-radius: 20px; text-align: center; border: 1px solid rgba(255,255,255,0.05);">
+        <div style="width: 80px; height: 80px; background: var(--toyota-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">
+          <i class="fas fa-shield-alt" style="color: white;"></i>
+        </div>
+        <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.3rem; margin-bottom: 1rem;">WARRANTY PROTECTION</h3>
+        <p style="color: var(--toyota-silver); line-height: 1.8;">Genuine parts maintain your vehicle's warranty and come with their own 12-month warranty coverage.</p>
+      </div>
+
+      <div class="reveal stagger-2" style="background: linear-gradient(145deg, #1e1e1e, #151515); padding: 2.5rem; border-radius: 20px; text-align: center; border: 1px solid rgba(255,255,255,0.05);">
+        <div style="width: 80px; height: 80px; background: var(--toyota-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">
+          <i class="fas fa-clock" style="color: white;"></i>
+        </div>
+        <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.3rem; margin-bottom: 1rem;">LONGEVITY</h3>
+        <p style="color: var(--toyota-silver); line-height: 1.8;">Built to the same high standards as your Toyota, ensuring longer life and reliable performance.</p>
+      </div>
+
+      <div class="reveal stagger-3" style="background: linear-gradient(145deg, #1e1e1e, #151515); padding: 2.5rem; border-radius: 20px; text-align: center; border: 1px solid rgba(255,255,255,0.05);">
+        <div style="width: 80px; height: 80px; background: var(--toyota-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;">
+          <i class="fas fa-headset" style="color: white;"></i>
+        </div>
+        <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.3rem; margin-bottom: 1rem;">EXPERT SUPPORT</h3>
+        <p style="color: var(--toyota-silver); line-height: 1.8;">Backed by Toyota's network of certified technicians who know your vehicle inside and out.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parts Catalog -->
+  <section class="section featured-cars" id="parts-catalog">
+    <div class="section-header reveal">
+      <p class="section-subtitle">Browse</p>
+      <h2 class="section-title">PARTS CATALOG</h2>
+    </div>
+
+    <div class="parts-categories">
+      <!-- Engine Parts -->
+      <div class="part-category reveal-scale">
+        <div class="part-image">
+          <img src="engine.png" alt="Engine Parts">
+        </div>
+        <div class="part-info">
+          <h3 class="part-name">ENGINE PARTS</h3>
+          <p class="part-description">Oil filters, air filters, spark plugs, belts, and complete engine components.</p>
+          <p class="part-price">From $12.99</p>
+          <a href="contact.html" class="car-btn">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Brake System -->
+      <div class="part-category reveal-scale stagger-1">
+        <div class="part-image">
+          <img src="brake system.png" alt="Brake System">
+        </div>
+        <div class="part-info">
+          <h3 class="part-name">BRAKE SYSTEM</h3>
+          <p class="part-description">Brake pads, rotors, calipers, and complete brake system components.</p>
+          <p class="part-price">From $45.99</p>
+          <a href="contact.html" class="car-btn">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Suspension -->
+      <div class="part-category reveal-scale stagger-2">
+        <div class="part-image">
+          <img src="suspension.png" alt="Suspension">
+        </div>
+        <div class="part-info">
+          <h3 class="part-name">SUSPENSION</h3>
+          <p class="part-description">Shocks, struts, control arms, and suspension components for a smooth ride.</p>
+          <p class="part-price">From $89.99</p>
+          <a href="contact.html" class="car-btn">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Electrical -->
+      <div class="part-category reveal-scale stagger-3">
+        <div class="part-image">
+          <img src="electrical.png" alt="Electrical">
+        </div>
+        <div class="part-info">
+          <h3 class="part-name">ELECTRICAL</h3>
+          <p class="part-description">Batteries, alternators, starters, sensors, and electrical components.</p>
+          <p class="part-price">From $29.99</p>
+          <a href="contact.html" class="car-btn">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Exterior -->
+      <div class="part-category reveal-scale">
+        <div class="part-image">
+          <img src="exterior.png" alt="Exterior Accessories">
+        </div>
+        <div class="part-info">
+          <h3 class="part-name">EXTERIOR</h3>
+          <p class="part-description">Body parts, mirrors, lights, trim, and exterior accessories.</p>
+          <p class="part-price">From $19.99</p>
+          <a href="contact.html" class="car-btn">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Interior -->
+      <div class="part-category reveal-scale stagger-1">
+        <div class="part-image">
+          <img src="interior.png" alt="Interior Accessories">
+        </div>
+        <div class="part-info">
+          <h3 class="part-name">INTERIOR</h3>
+          <p class="part-description">Floor mats, seat covers, electronics, and interior accessories.</p>
+          <p class="part-price">From $24.99</p>
+          <a href="contact.html" class="car-btn">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Tires -->
+      <div class="part-category reveal-scale stagger-2">
+        <div class="part-image">
+          <img src="tyres.png" alt="Tires">
+        </div>
+        <div class="part-info">
+          <h3 class="part-name">TIRES & WHEELS</h3>
+          <p class="part-description">All-season, performance, and winter tires with genuine alloy wheels.</p>
+          <p class="part-price">From $89.99</p>
+          <a href="contact.html" class="car-btn">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Maintenance Kits -->
+      <div class="part-category reveal-scale stagger-3">
+        <div class="part-image">
+          <img src="kit.png" alt="Maintenance Kits">
+        </div>
+        <div class="part-info">
+          <h3 class="part-name">MAINTENANCE KITS</h3>
+          <p class="part-description">Complete service kits with everything you need for routine maintenance.</p>
+          <p class="part-price">From $149.99</p>
+          <a href="contact.html" class="car-btn">Shop Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accessories Section -->
+  <section class="section" style="background: linear-gradient(180deg, #0f0f0f 0%, var(--toyota-dark) 100%);">
+    <div class="section-header reveal">
+      <p class="section-subtitle">Personalize</p>
+      <h2 class="section-title">ACCESSORIES</h2>
+    </div>
+
+    <div style="max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+      <div class="reveal" style="position: relative; border-radius: 20px; overflow: hidden; aspect-ratio: 16/10;">
+        <img src="Landcruiser.png" alt="Off-Road Accessories" style="width: 100%; height: 100%; object-fit: cover;">
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 2rem; background: linear-gradient(180deg, transparent, rgba(0,0,0,0.9));">
+          <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.5rem; margin-bottom: 0.5rem;">OFF-ROAD GEAR</h3>
+          <p style="color: var(--toyota-silver); margin-bottom: 1rem;">Lift kits, skid plates, winches, and more.</p>
+          <a href="contact.html" style="color: var(--toyota-red); text-decoration: none; font-weight: 600;">Explore <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="reveal stagger-1" style="position: relative; border-radius: 20px; overflow: hidden; aspect-ratio: 16/10;">
+        <img src="Supra MK5.png" alt="Performance Parts" style="width: 100%; height: 100%; object-fit: cover;">
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 2rem; background: linear-gradient(180deg, transparent, rgba(0,0,0,0.9));">
+          <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.5rem; margin-bottom: 0.5rem;">PERFORMANCE</h3>
+          <p style="color: var(--toyota-silver); margin-bottom: 1rem;">Exhaust systems, intakes, and tuning.</p>
+          <a href="contact.html" style="color: var(--toyota-red); text-decoration: none; font-weight: 600;">Explore <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="reveal stagger-2" style="position: relative; border-radius: 20px; overflow: hidden; aspect-ratio: 16/10;">
+        <img src="technology.png" alt="Technology" style="width: 100%; height: 100%; object-fit: cover;">
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 2rem; background: linear-gradient(180deg, transparent, rgba(0,0,0,0.9));">
+          <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.5rem; margin-bottom: 0.5rem;">TECHNOLOGY</h3>
+          <p style="color: var(--toyota-silver); margin-bottom: 1rem;">Audio upgrades, dash cams, and connectivity.</p>
+          <a href="contact.html" style="color: var(--toyota-red); text-decoration: none; font-weight: 600;">Explore <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Specials -->
+  <section class="section" style="background: linear-gradient(135deg, var(--toyota-red) 0%, #c41e3a 100%); text-align: center;">
+    <div class="reveal">
+      <h2 style="font-family: 'Orbitron', sans-serif; font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1.5rem;">SERVICE SPECIALS</h2>
+      <p style="font-size: 1.2rem; margin-bottom: 2.5rem; opacity: 0.9;">Save on maintenance with our current offers</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto;">
+        <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 2rem; border-radius: 15px;">
+          <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.3rem; margin-bottom: 1rem;">OIL CHANGE</h3>
+          <p style="font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem;">$39.99</p>
+          <p style="opacity: 0.8;">Genuine Toyota oil filter included</p>
+        </div>
+        <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 2rem; border-radius: 15px;">
+          <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.3rem; margin-bottom: 1rem;">BRAKE SERVICE</h3>
+          <p style="font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem;">$149.99</p>
+          <p style="opacity: 0.8;">Front or rear brake pad replacement</p>
+        </div>
+        <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 2rem; border-radius: 15px;">
+          <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.3rem; margin-bottom: 1rem;">TIRE ROTATION</h3>
+          <p style="font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem;">$19.99</p>
+          <p style="opacity: 0.8;">Includes multi-point inspection</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>TOYOTA</h3>
+        <p>Let's Go Places. Building the future of mobility since 1937.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Vehicles</h4>
+        <ul>
+          <li><a href="cars.html">All Vehicles</a></li>
+          <li><a href="cars.html">SUVs</a></li>
+          <li><a href="cars.html">Trucks</a></li>
+          <li><a href="cars.html">Sports Cars</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="services.html">Service Center</a></li>
+          <li><a href="parts.html">Genuine Parts</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:1-800-TOYOTA">1-800-TOYOTA</a></li>
+          <li><a href="mailto:info@toyota.com">info@toyota.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Toyota Motor Corporation. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/animations.js"></script>
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | TOYOTA</title>
+  <meta name="description" content="Explore the Toyota gallery - stunning images of our vehicles, technology, and brand">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-logo">TOYOTA</div>
+    <div class="preloader-text">LOADING GALLERY...</div>
+    <div class="loading-bar">
+      <div class="loading-progress"></div>
+    </div>
+  </div>
+
+  <div class="scanline"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">TOYOTA</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cars.html">Vehicles</a></li>
+      <li><a href="parts.html">Parts</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Book a Test Drive</a>
+    <div class="mobile-menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="cars.html">Vehicles</a>
+    <a href="parts.html">Parts</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Gallery Hero -->
+  <section class="hero" style="min-height: 60vh; padding-top: 120px;">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-particles"></div>
+    
+    <div class="hero-content">
+      <p class="hero-subtitle">Visual Journey</p>
+      <h1 class="hero-title glitch" data-text="GALLERY">
+        <span>THE WORLD OF</span>
+        <span class="highlight">TOYOTA</span>
+      </h1>
+      <p class="hero-description">
+        Explore stunning visuals of our vehicles, technology, and the passion 
+        that drives us forward.
+      </p>
+    </div>
+  </section>
+
+  <!-- Gallery Filter -->
+  <section class="section" style="padding: 2rem 5%; background: #0f0f0f;">
+    <div style="max-width: 1400px; margin: 0 auto; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+      <button class="gallery-filter active" data-filter="all" style="padding: 0.8rem 2rem; background: var(--toyota-red); color: white; border: none; border-radius: 50px; font-family: 'Rajdhani', sans-serif; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">All</button>
+      <button class="gallery-filter" data-filter="vehicles" style="padding: 0.8rem 2rem; background: transparent; color: var(--toyota-light); border: 2px solid var(--toyota-gray); border-radius: 50px; font-family: 'Rajdhani', sans-serif; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">Vehicles</button>
+      <button class="gallery-filter" data-filter="lifestyle" style="padding: 0.8rem 2rem; background: transparent; color: var(--toyota-light); border: 2px solid var(--toyota-gray); border-radius: 50px; font-family: 'Rajdhani', sans-serif; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">Lifestyle</button>
+      <button class="gallery-filter" data-filter="technology" style="padding: 0.8rem 2rem; background: transparent; color: var(--toyota-light); border: 2px solid var(--toyota-gray); border-radius: 50px; font-family: 'Rajdhani', sans-serif; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">Technology</button>
+      <button class="gallery-filter" data-filter="racing" style="padding: 0.8rem 2rem; background: transparent; color: var(--toyota-light); border: 2px solid var(--toyota-gray); border-radius: 50px; font-family: 'Rajdhani', sans-serif; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">Racing</button>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="section" style="background: linear-gradient(180deg, var(--toyota-dark) 0%, #0f0f0f 100%);">
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- Gallery Item 1 -->
+      <div class="gallery-item" data-category="vehicles">
+        <img src="Supra MK5.png" alt="Toyota Supra">
+        <div class="gallery-overlay">
+          <p class="gallery-title">GR SUPRA</p>
+        </div>
+      </div>
+
+      <!-- Gallery Item 2 -->
+      <div class="gallery-item" data-category="lifestyle">
+        <img src="Advanture.png" alt="Adventure">
+        <div class="gallery-overlay">
+          <p class="gallery-title">ADVENTURE AWAITS</p>
+        </div>
+      </div>
+
+      <!-- Gallery Item 3 -->
+      <div class="gallery-item" data-category="vehicles">
+        <img src="R4 Prime.png" alt="Toyota RAV4">
+        <div class="gallery-overlay">
+          <p class="gallery-title">RAV4 PRIME</p>
+        </div>
+      </div>
+
+      <!-- Gallery Item 4 -->
+      <div class="gallery-item" data-category="racing">
+        <img src="racing.png" alt="Racing">
+        <div class="gallery-overlay">
+          <p class="gallery-title">TRACK PERFORMANCE</p>
+        </div>
+      </div>
+
+      <!-- Gallery Item 5 -->
+      <div class="gallery-item" data-category="technology">
+        <img src="technology.png" alt="Technology">
+        <div class="gallery-overlay">
+          <p class="gallery-title">INNOVATION</p>
+        </div>
+      </div>
+
+      <!-- Gallery Item 6 -->
+      <div class="gallery-item" data-category="vehicles">
+        <img src="Landcruiser.png" alt="Toyota Land Cruiser">
+        <div class="gallery-overlay">
+          <p class="gallery-title">LAND CRUISER</p>
+        </div>
+      </div>
+
+      <!-- Gallery Item 7 -->
+      <div class="gallery-item" data-category="lifestyle">
+        <img src="city drive.png" alt="City Drive">
+        <div class="gallery-overlay">
+          <p class="gallery-title">URBAN EXPLORER</p>
+        </div>
+      </div>
+
+      <!-- Gallery Item 8 -->
+      <div class="gallery-item" data-category="racing">
+        <img src="motorsport.png" alt="Motorsport">
+        <div class="gallery-overlay">
+          <p class="gallery-title">MOTORSPORT HERITAGE</p>
+        </div>
+      </div>
+
+      <!-- Gallery Item 9 -->
+      <div class="gallery-item" data-category="vehicles">
+        <img src="Camry XSE.png" alt="Toyota Camry">
+        <div class="gallery-overlay">
+          <p class="gallery-title">CAMRY XSE</p>
+        </div>
+      </div>
+
+      <!-- Gallery Item 10 -->
+      <div class="gallery-item" data-category="technology">
+        <img src="future mobility.png" alt="Future Tech">
+        <div class="gallery-overlay">
+          <p class="gallery-title">FUTURE MOBILITY</p>
+        </div>
+      </div>
+
+      <!-- Gallery Item 11 -->
+      <div class="gallery-item" data-category="lifestyle">
+        <img src="mountain drive.png" alt="Mountain Drive">
+        <div class="gallery-overlay">
+          <p class="gallery-title">SCENIC DRIVES</p>
+        </div>
+      </div>
+
+      <!-- Gallery Item 12 -->
+      <div class="gallery-item" data-category="vehicles">
+        <img src="GR86.png" alt="Toyota GR86">
+        <div class="gallery-overlay">
+          <p class="gallery-title">GR86</p>
+        </div>
+      </div>
+
+      <!-- Gallery Item 13 -->
+      <div class="gallery-item" data-category="racing">
+        <img src="racing track.png" alt="Race Track">
+        <div class="gallery-overlay">
+          <p class="gallery-title">RACING DNA</p>
+        </div>
+      </div>
+
+      <!-- Gallery Item 14 -->
+      <div class="gallery-item" data-category="technology">
+        <img src="connected drive.png" alt="Connected Car">
+        <div class="gallery-overlay">
+          <p class="gallery-title">CONNECTED DRIVE</p>
+        </div>
+      </div>
+
+      <!-- Gallery Item 15 -->
+      <div class="gallery-item" data-category="lifestyle">
+        <img src="family adventures.png" alt="Family Trip">
+        <div class="gallery-overlay">
+          <p class="gallery-title">FAMILY ADVENTURES</p>
+        </div>
+      </div>
+
+      <!-- Gallery Item 16 -->
+      <div class="gallery-item" data-category="vehicles">
+        <img src="Corolla.png" alt="Toyota Corolla">
+        <div class="gallery-overlay">
+          <p class="gallery-title">COROLLA HYBRID</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Instagram Feed -->
+  <section class="section" style="background: linear-gradient(180deg, var(--toyota-dark) 0%, #0f0f0f 100%);">
+    <div class="section-header reveal">
+      <p class="section-subtitle">@Toyota</p>
+      <h2 class="section-title">FOLLOW US</h2>
+    </div>
+
+    <div style="max-width: 1400px; margin: 0 auto;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+        <div class="reveal" style="aspect-ratio: 1; background: linear-gradient(135deg, #1e1e1e, #151515); border-radius: 10px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          <i class="fab fa-instagram" style="font-size: 3rem; color: var(--toyota-red);"></i>
+        </div>
+        <div class="reveal stagger-1" style="aspect-ratio: 1; background: linear-gradient(135deg, #1e1e1e, #151515); border-radius: 10px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          <i class="fab fa-twitter" style="font-size: 3rem; color: var(--toyota-red);"></i>
+        </div>
+        <div class="reveal stagger-2" style="aspect-ratio: 1; background: linear-gradient(135deg, #1e1e1e, #151515); border-radius: 10px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          <i class="fab fa-facebook-f" style="font-size: 3rem; color: var(--toyota-red);"></i>
+        </div>
+        <div class="reveal stagger-3" style="aspect-ratio: 1; background: linear-gradient(135deg, #1e1e1e, #151515); border-radius: 10px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          <i class="fab fa-youtube" style="font-size: 3rem; color: var(--toyota-red);"></i>
+        </div>
+        <div class="reveal" style="aspect-ratio: 1; background: linear-gradient(135deg, #1e1e1e, #151515); border-radius: 10px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          <i class="fab fa-tiktok" style="font-size: 3rem; color: var(--toyota-red);"></i>
+        </div>
+        <div class="reveal stagger-1" style="aspect-ratio: 1; background: linear-gradient(135deg, #1e1e1e, #151515); border-radius: 10px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          <i class="fab fa-linkedin-in" style="font-size: 3rem; color: var(--toyota-red);"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="background: linear-gradient(135deg, var(--toyota-red) 0%, #c41e3a 100%); text-align: center;">
+    <div class="reveal">
+      <h2 style="font-family: 'Orbitron', sans-serif; font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1.5rem;">CREATE YOUR OWN STORY</h2>
+      <p style="font-size: 1.2rem; margin-bottom: 2.5rem; opacity: 0.9;">Experience Toyota firsthand with a test drive</p>
+      <a href="contact.html" class="btn" style="background: white; color: var(--toyota-red); border-color: white;">Book a Test Drive</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>TOYOTA</h3>
+        <p>Let's Go Places. Building the future of mobility since 1937.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Vehicles</h4>
+        <ul>
+          <li><a href="cars.html">All Vehicles</a></li>
+          <li><a href="cars.html">SUVs</a></li>
+          <li><a href="cars.html">Trucks</a></li>
+          <li><a href="cars.html">Sports Cars</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="services.html">Service Center</a></li>
+          <li><a href="parts.html">Genuine Parts</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:1-800-TOYOTA">1-800-TOYOTA</a></li>
+          <li><a href="mailto:info@toyota.com">info@toyota.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Toyota Motor Corporation. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/animations.js"></script>
+  <script>
+    // Gallery filter functionality
+    const filterBtns = document.querySelectorAll('.gallery-filter');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update active button
+        filterBtns.forEach(b => {
+          b.style.background = 'transparent';
+          b.style.color = 'var(--toyota-light)';
+          b.style.borderColor = 'var(--toyota-gray)';
+        });
+        btn.style.background = 'var(--toyota-red)';
+        btn.style.color = 'white';
+        btn.style.borderColor = 'var(--toyota-red)';
+
+        // Filter items
+        const filter = btn.dataset.filter;
+        galleryItems.forEach(item => {
+          if (filter === 'all' || item.dataset.category === filter) {
+            gsap.to(item, { opacity: 1, scale: 1, duration: 0.4, display: 'block' });
+          } else {
+            gsap.to(item, { opacity: 0, scale: 0.8, duration: 0.4, display: 'none' });
+          }
+        });
+      });
+    });
+
+    // Lightbox functionality for gallery items
+    galleryItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const img = item.querySelector('img');
+        const title = item.querySelector('.gallery-title').textContent;
+        
+        // Create lightbox
+        const lightbox = document.createElement('div');
+        lightbox.style.cssText = `
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0,0,0,0.95);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 10000;
+          cursor: pointer;
+        `;
+        
+        lightbox.innerHTML = `
+          <div style="position: relative; max-width: 90%; max-height: 90%;">
+            <img src="${img.src}" style="max-width: 100%; max-height: 85vh; border-radius: 10px;">
+            <p style="text-align: center; margin-top: 1rem; font-family: Orbitron, sans-serif; font-size: 1.5rem;">${title}</p>
+            <button style="position: absolute; top: -50px; right: 0; background: none; border: none; color: white; font-size: 2rem; cursor: pointer;"><i class="fas fa-times"></i></button>
+          </div>
+        `;
+        
+        document.body.appendChild(lightbox);
+        gsap.from(lightbox.querySelector('img'), { scale: 0.8, opacity: 0, duration: 0.3 });
+        
+        lightbox.addEventListener('click', (e) => {
+          if (e.target === lightbox || e.target.closest('button')) {
+            gsap.to(lightbox, { opacity: 0, duration: 0.3, onComplete: () => lightbox.remove() });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

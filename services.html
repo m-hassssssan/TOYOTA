@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | TOYOTA</title>
+  <meta name="description" content="Toyota service center - maintenance, repairs, and genuine parts">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-logo">TOYOTA</div>
+    <div class="preloader-text">LOADING SERVICES...</div>
+    <div class="loading-bar">
+      <div class="loading-progress"></div>
+    </div>
+  </div>
+
+  <div class="scanline"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">TOYOTA</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cars.html">Vehicles</a></li>
+      <li><a href="parts.html">Parts</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Book Service</a>
+    <div class="mobile-menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="cars.html">Vehicles</a>
+    <a href="parts.html">Parts</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Services Hero -->
+  <section class="hero" style="min-height: 70vh; padding-top: 120px;">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-particles"></div>
+    
+    <div class="hero-content">
+      <p class="hero-subtitle">Expert Care</p>
+      <h1 class="hero-title glitch" data-text="SERVICE">
+        <span>TOYOTA</span>
+        <span class="highlight">SERVICE CENTER</span>
+      </h1>
+      <p class="hero-description">
+        Keep your Toyota running at its best with certified technicians, 
+        genuine parts, and state-of-the-art facilities.
+      </p>
+      <div class="hero-buttons">
+        <a href="contact.html" class="btn btn-primary">Schedule Service</a>
+        <a href="#services" class="btn btn-secondary">Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Promise -->
+  <section class="section" style="background: linear-gradient(180deg, var(--toyota-dark) 0%, #0f0f0f 100%);">
+    <div class="section-header reveal">
+      <p class="section-subtitle">Why Choose Us</p>
+      <h2 class="section-title">THE TOYOTA SERVICE PROMISE</h2>
+    </div>
+
+    <div style="max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+      <div class="reveal" style="text-align: center; padding: 2rem;">
+        <div style="width: 100px; height: 100px; background: linear-gradient(135deg, var(--toyota-red), #ff4757); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2.5rem;">
+          <i class="fas fa-user-tie" style="color: white;"></i>
+        </div>
+        <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.3rem; margin-bottom: 1rem;">CERTIFIED TECHNICIANS</h3>
+        <p style="color: var(--toyota-silver); line-height: 1.8;">Factory-trained experts who know your Toyota inside and out.</p>
+      </div>
+
+      <div class="reveal stagger-1" style="text-align: center; padding: 2rem;">
+        <div style="width: 100px; height: 100px; background: linear-gradient(135deg, var(--toyota-red), #ff4757); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2.5rem;">
+          <i class="fas fa-certificate" style="color: white;"></i>
+        </div>
+        <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.3rem; margin-bottom: 1rem;">GENUINE PARTS</h3>
+        <p style="color: var(--toyota-silver); line-height: 1.8;">Only authentic Toyota parts designed for your vehicle.</p>
+      </div>
+
+      <div class="reveal stagger-2" style="text-align: center; padding: 2rem;">
+        <div style="width: 100px; height: 100px; background: linear-gradient(135deg, var(--toyota-red), #ff4757); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2.5rem;">
+          <i class="fas fa-shield-alt" style="color: white;"></i>
+        </div>
+        <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.3rem; margin-bottom: 1rem;">WARRANTY PROTECTION</h3>
+        <p style="color: var(--toyota-silver); line-height: 1.8;">Service that maintains your warranty and vehicle value.</p>
+      </div>
+
+      <div class="reveal stagger-3" style="text-align: center; padding: 2rem;">
+        <div style="width: 100px; height: 100px; background: linear-gradient(135deg, var(--toyota-red), #ff4757); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2.5rem;">
+          <i class="fas fa-clock" style="color: white;"></i>
+        </div>
+        <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.3rem; margin-bottom: 1rem;">CONVENIENT SCHEDULING</h3>
+        <p style="color: var(--toyota-silver); line-height: 1.8;">Book online or by phone with flexible appointment times.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="section featured-cars" id="services">
+    <div class="section-header reveal">
+      <p class="section-subtitle">What We Offer</p>
+      <h2 class="section-title">OUR SERVICES</h2>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card reveal-scale">
+        <div class="service-icon">
+          <i class="fas fa-oil-can"></i>
+        </div>
+        <h3 class="service-title">OIL CHANGE</h3>
+        <p class="service-description">Regular oil changes with genuine Toyota oil and filters to keep your engine running smoothly.</p>
+        <p style="font-family: 'Orbitron', sans-serif; font-size: 1.5rem; color: var(--toyota-red); margin-top: 1rem;">From $39.99</p>
+      </div>
+
+      <div class="service-card reveal-scale stagger-1">
+        <div class="service-icon">
+          <i class="fas fa-car-battery"></i>
+        </div>
+        <h3 class="service-title">BATTERY SERVICE</h3>
+        <p class="service-description">Battery testing, replacement, and charging system inspection for reliable starts.</p>
+        <p style="font-family: 'Orbitron', sans-serif; font-size: 1.5rem; color: var(--toyota-red); margin-top: 1rem;">From $129.99</p>
+      </div>
+
+      <div class="service-card reveal-scale stagger-2">
+        <div class="service-icon">
+          <i class="fas fa-circle"></i>
+        </div>
+        <h3 class="service-title">TIRE SERVICE</h3>
+        <p class="service-description">Rotation, balancing, alignment, and replacement with genuine Toyota tires.</p>
+        <p style="font-family: 'Orbitron', sans-serif; font-size: 1.5rem; color: var(--toyota-red); margin-top: 1rem;">From $19.99</p>
+      </div>
+
+      <div class="service-card reveal-scale">
+        <div class="service-icon">
+          <i class="fas fa-wrench"></i>
+        </div>
+        <h3 class="service-title">BRAKE SERVICE</h3>
+        <p class="service-description">Complete brake inspection, pad replacement, and rotor resurfacing or replacement.</p>
+        <p style="font-family: 'Orbitron', sans-serif; font-size: 1.5rem; color: var(--toyota-red); margin-top: 1rem;">From $149.99</p>
+      </div>
+
+      <div class="service-card reveal-scale stagger-1">
+        <div class="service-icon">
+          <i class="fas fa-snowflake"></i>
+        </div>
+        <h3 class="service-title">A/C SERVICE</h3>
+        <p class="service-description">Air conditioning inspection, recharge, and repair for optimal cooling performance.</p>
+        <p style="font-family: 'Orbitron', sans-serif; font-size: 1.5rem; color: var(--toyota-red); margin-top: 1rem;">From $89.99</p>
+      </div>
+
+      <div class="service-card reveal-scale stagger-2">
+        <div class="service-icon">
+          <i class="fas fa-cogs"></i>
+        </div>
+        <h3 class="service-title">TRANSMISSION</h3>
+        <p class="service-description">Fluid exchange, filter replacement, and complete transmission service.</p>
+        <p style="font-family: 'Orbitron', sans-serif; font-size: 1.5rem; color: var(--toyota-red); margin-top: 1rem;">From $179.99</p>
+      </div>
+
+      <div class="service-card reveal-scale">
+        <div class="service-icon">
+          <i class="fas fa-search"></i>
+        </div>
+        <h3 class="service-title">MULTI-POINT INSPECTION</h3>
+        <p class="service-description">Comprehensive vehicle inspection covering all major systems and components.</p>
+        <p style="font-family: 'Orbitron', sans-serif; font-size: 1.5rem; color: var(--toyota-red); margin-top: 1rem;">FREE</p>
+      </div>
+
+      <div class="service-card reveal-scale stagger-1">
+        <div class="service-icon">
+          <i class="fas fa-car-crash"></i>
+        </div>
+        <h3 class="service-title">COLLISION REPAIR</h3>
+        <p class="service-description">Certified collision repair with genuine parts and factory-matched paint.</p>
+        <p style="font-family: 'Orbitron', sans-serif; font-size: 1.5rem; color: var(--toyota-red); margin-top: 1rem;">Get Estimate</p>
+      </div>
+
+      <div class="service-card reveal-scale stagger-2">
+        <div class="service-icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <h3 class="service-title">DIAGNOSTICS</h3>
+        <p class="service-description">Advanced computer diagnostics to identify and resolve any issues quickly.</p>
+        <p style="font-family: 'Orbitron', sans-serif; font-size: 1.5rem; color: var(--toyota-red); margin-top: 1rem;">From $79.99</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Maintenance Schedule -->
+  <section class="section" style="background: linear-gradient(180deg, #0f0f0f 0%, var(--toyota-dark) 100%);">
+    <div class="section-header reveal">
+      <p class="section-subtitle">Stay on Track</p>
+      <h2 class="section-title">MAINTENANCE SCHEDULE</h2>
+    </div>
+
+    <div style="max-width: 1000px; margin: 0 auto;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+        <div class="reveal" style="background: linear-gradient(145deg, #1e1e1e, #151515); padding: 2rem; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05);">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: var(--toyota-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+              <i class="fas fa-1" style="color: white;"></i>
+            </div>
+            <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.5rem;">5,000 MILES</h3>
+          </div>
+          <ul style="list-style: none; color: var(--toyota-silver);">
+            <li style="margin-bottom: 0.8rem;"><i class="fas fa-check" style="color: var(--toyota-red); margin-right: 0.5rem;"></i> Oil & Filter Change</li>
+            <li style="margin-bottom: 0.8rem;"><i class="fas fa-check" style="color: var(--toyota-red); margin-right: 0.5rem;"></i> Tire Rotation</li>
+            <li style="margin-bottom: 0.8rem;"><i class="fas fa-check" style="color: var(--toyota-red); margin-right: 0.5rem;"></i> Multi-Point Inspection</li>
+            <li><i class="fas fa-check" style="color: var(--toyota-red); margin-right: 0.5rem;"></i> Fluid Level Check</li>
+          </ul>
+        </div>
+
+        <div class="reveal stagger-1" style="background: linear-gradient(145deg, #1e1e1e, #151515); padding: 2rem; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05);">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: var(--toyota-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+              <i class="fas fa-2" style="color: white;"></i>
+            </div>
+            <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.5rem;">15,000 MILES</h3>
+          </div>
+          <ul style="list-style: none; color: var(--toyota-silver);">
+            <li style="margin-bottom: 0.8rem;"><i class="fas fa-check" style="color: var(--toyota-red); margin-right: 0.5rem;"></i> All 5K Services</li>
+            <li style="margin-bottom: 0.8rem;"><i class="fas fa-check" style="color: var(--toyota-red); margin-right: 0.5rem;"></i> Air Filter Replacement</li>
+            <li style="margin-bottom: 0.8rem;"><i class="fas fa-check" style="color: var(--toyota-red); margin-right: 0.5rem;"></i> Brake Inspection</li>
+            <li><i class="fas fa-check" style="color: var(--toyota-red); margin-right: 0.5rem;"></i> Wiper Blades</li>
+          </ul>
+        </div>
+
+        <div class="reveal stagger-2" style="background: linear-gradient(145deg, #1e1e1e, #151515); padding: 2rem; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05);">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: var(--toyota-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+              <i class="fas fa-3" style="color: white;"></i>
+            </div>
+            <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.5rem;">30,000 MILES</h3>
+          </div>
+          <ul style="list-style: none; color: var(--toyota-silver);">
+            <li style="margin-bottom: 0.8rem;"><i class="fas fa-check" style="color: var(--toyota-red); margin-right: 0.5rem;"></i> All 15K Services</li>
+            <li style="margin-bottom: 0.8rem;"><i class="fas fa-check" style="color: var(--toyota-red); margin-right: 0.5rem;"></i> Cabin Air Filter</li>
+            <li style="margin-bottom: 0.8rem;"><i class="fas fa-check" style="color: var(--toyota-red); margin-right: 0.5rem;"></i> Transmission Service</li>
+            <li><i class="fas fa-check" style="color: var(--toyota-red); margin-right: 0.5rem;"></i> Coolant Exchange</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Specials -->
+  <section class="section" style="background: linear-gradient(135deg, var(--toyota-red) 0%, #c41e3a 100%);">
+    <div class="section-header reveal">
+      <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Limited Time</p>
+      <h2 class="section-title" style="color: white;">SERVICE SPECIALS</h2>
+    </div>
+
+    <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+      <div class="reveal" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 2.5rem; border-radius: 20px; text-align: center; border: 1px solid rgba(255,255,255,0.2);">
+        <p style="font-size: 0.9rem; letter-spacing: 0.2rem; margin-bottom: 1rem; opacity: 0.8;">SPRING SPECIAL</p>
+        <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.5rem; margin-bottom: 1rem;">OIL CHANGE PACKAGE</h3>
+        <p style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem;">$39.99</p>
+        <ul style="list-style: none; margin-bottom: 1.5rem; opacity: 0.9;">
+          <li style="margin-bottom: 0.5rem;">Genuine Toyota Oil Filter</li>
+          <li style="margin-bottom: 0.5rem;">Up to 5 Quarts Oil</li>
+          <li>Multi-Point Inspection</li>
+        </ul>
+        <a href="contact.html" class="btn" style="background: white; color: var(--toyota-red); width: 100%;">Book Now</a>
+      </div>
+
+      <div class="reveal stagger-1" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 2.5rem; border-radius: 20px; text-align: center; border: 1px solid rgba(255,255,255,0.2);">
+        <p style="font-size: 0.9rem; letter-spacing: 0.2rem; margin-bottom: 1rem; opacity: 0.8;">BRAKE SPECIAL</p>
+        <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.5rem; margin-bottom: 1rem;">BRAKE SERVICE</h3>
+        <p style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem;">$149.99</p>
+        <ul style="list-style: none; margin-bottom: 1.5rem; opacity: 0.9;">
+          <li style="margin-bottom: 0.5rem;">Front or Rear Pads</li>
+          <li style="margin-bottom: 0.5rem;">Rotor Inspection</li>
+          <li>Brake Fluid Check</li>
+        </ul>
+        <a href="contact.html" class="btn" style="background: white; color: var(--toyota-red); width: 100%;">Book Now</a>
+      </div>
+
+      <div class="reveal stagger-2" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 2.5rem; border-radius: 20px; text-align: center; border: 1px solid rgba(255,255,255,0.2);">
+        <p style="font-size: 0.9rem; letter-spacing: 0.2rem; margin-bottom: 1rem; opacity: 0.8;">TIRE SPECIAL</p>
+        <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.5rem; margin-bottom: 1rem;">TIRE ROTATION</h3>
+        <p style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem;">$19.99</p>
+        <ul style="list-style: none; margin-bottom: 1.5rem; opacity: 0.9;">
+          <li style="margin-bottom: 0.5rem;">4-Wheel Rotation</li>
+          <li style="margin-bottom: 0.5rem;">Tire Pressure Check</li>
+          <li>Tread Depth Inspection</li>
+        </ul>
+        <a href="contact.html" class="btn" style="background: white; color: var(--toyota-red); width: 100%;">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="background: linear-gradient(180deg, var(--toyota-dark) 0%, #0f0f0f 100%); text-align: center;">
+    <div class="reveal">
+      <h2 style="font-family: 'Orbitron', sans-serif; font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1.5rem;">READY TO SCHEDULE?</h2>
+      <p style="color: var(--toyota-silver); font-size: 1.2rem; margin-bottom: 2.5rem;">Book your service appointment online or give us a call</p>
+      <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html" class="btn btn-primary">Book Online</a>
+        <a href="tel:1-800-TOYOTA" class="btn btn-secondary"><i class="fas fa-phone"></i> 1-800-TOYOTA</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>TOYOTA</h3>
+        <p>Let's Go Places. Building the future of mobility since 1937.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Vehicles</h4>
+        <ul>
+          <li><a href="cars.html">All Vehicles</a></li>
+          <li><a href="cars.html">SUVs</a></li>
+          <li><a href="cars.html">Trucks</a></li>
+          <li><a href="cars.html">Sports Cars</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="services.html">Service Center</a></li>
+          <li><a href="parts.html">Genuine Parts</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:1-800-TOYOTA">1-800-TOYOTA</a></li>
+          <li><a href="mailto:info@toyota.com">info@toyota.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Toyota Motor Corporation. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/animations.js"></script>
+</body>
+</html>

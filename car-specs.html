@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Specifications | TOYOTA</title>
+  <meta name="description" content="Detailed specifications and features for Toyota vehicles">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-logo">TOYOTA</div>
+    <div class="loading-bar">
+      <div class="loading-progress"></div>
+    </div>
+  </div>
+
+  <div class="scanline"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">TOYOTA</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cars.html">Vehicles</a></li>
+      <li><a href="parts.html">Parts</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Book a Test Drive</a>
+    <div class="mobile-menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="cars.html">Vehicles</a>
+    <a href="parts.html">Parts</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Specs Hero -->
+  <section class="specs-hero">
+    <div class="specs-hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-particles"></div>
+    
+    <div class="specs-hero-content">
+      <div class="specs-car-image reveal-left">
+        <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?w=1000&q=80" alt="Toyota Vehicle" id="carImage">
+      </div>
+      <div class="specs-info reveal-right">
+        <p class="section-subtitle" id="carCategory">Sports Car</p>
+        <h1 id="carName">GR <span>SUPRA</span></h1>
+        <p class="specs-tagline" id="carTagline">Pure driving pleasure. Uncompromising performance.</p>
+        <p class="specs-price" id="carPrice">$55,000 <span style="font-size: 1rem; color: var(--toyota-silver);">Starting MSRP</span></p>
+        <div class="specs-actions">
+          <a href="contact.html" class="btn btn-primary">Build & Price</a>
+          <a href="contact.html" class="btn btn-secondary">Book Test Drive</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Specs -->
+  <section class="section" style="background: #0f0f0f; padding: 3rem 5%;">
+    <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center;">
+      <div class="reveal">
+        <i class="fas fa-tachometer-alt" style="font-size: 2.5rem; color: var(--toyota-red); margin-bottom: 1rem;"></i>
+        <p style="font-size: 2rem; font-family: 'Orbitron', sans-serif; font-weight: 700;" id="quickHp">382 HP</p>
+        <p style="color: var(--toyota-silver);">Horsepower</p>
+      </div>
+      <div class="reveal stagger-1">
+        <i class="fas fa-cog" style="font-size: 2.5rem; color: var(--toyota-red); margin-bottom: 1rem;"></i>
+        <p style="font-size: 2rem; font-family: 'Orbitron', sans-serif; font-weight: 700;" id="quickTorque">368 lb-ft</p>
+        <p style="color: var(--toyota-silver);">Torque</p>
+      </div>
+      <div class="reveal stagger-2">
+        <i class="fas fa-clock" style="font-size: 2.5rem; color: var(--toyota-red); margin-bottom: 1rem;"></i>
+        <p style="font-size: 2rem; font-family: 'Orbitron', sans-serif; font-weight: 700;" id="quickAccel">3.9s</p>
+        <p style="color: var(--toyota-silver);">0-60 mph</p>
+      </div>
+      <div class="reveal stagger-3">
+        <i class="fas fa-gas-pump" style="font-size: 2.5rem; color: var(--toyota-red); margin-bottom: 1rem;"></i>
+        <p style="font-size: 2rem; font-family: 'Orbitron', sans-serif; font-weight: 700;" id="quickMpg">25 MPG</p>
+        <p style="color: var(--toyota-silver);">Combined</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Specs -->
+  <section class="specs-details">
+    <div class="section-header reveal">
+      <p class="section-subtitle">Technical Data</p>
+      <h2 class="section-title">SPECIFICATIONS</h2>
+    </div>
+
+    <div class="specs-tabs reveal">
+      <button class="spec-tab active" data-tab="performance">Performance</button>
+      <button class="spec-tab" data-tab="dimensions">Dimensions</button>
+      <button class="spec-tab" data-tab="features">Features</button>
+      <button class="spec-tab" data-tab="safety">Safety</button>
+    </div>
+
+    <!-- Performance Specs -->
+    <div class="specs-content" id="performance">
+      <div class="specs-grid">
+        <div class="spec-item reveal-scale">
+          <p class="spec-label">Engine</p>
+          <p class="spec-value" id="specEngine">3.0L Inline-6 Turbo</p>
+        </div>
+        <div class="spec-item reveal-scale stagger-1">
+          <p class="spec-label">Horsepower</p>
+          <p class="spec-value" id="specHp">382 HP @ 5,800 RPM</p>
+        </div>
+        <div class="spec-item reveal-scale stagger-2">
+          <p class="spec-label">Torque</p>
+          <p class="spec-value" id="specTorque">368 lb-ft @ 1,800 RPM</p>
+        </div>
+        <div class="spec-item reveal-scale stagger-3">
+          <p class="spec-label">Transmission</p>
+          <p class="spec-value" id="specTrans">8-Speed Automatic</p>
+        </div>
+        <div class="spec-item reveal-scale">
+          <p class="spec-label">0-60 mph</p>
+          <p class="spec-value" id="spec060">3.9 seconds</p>
+        </div>
+        <div class="spec-item reveal-scale stagger-1">
+          <p class="spec-label">Top Speed</p>
+          <p class="spec-value" id="specTopSpeed">155 mph</p>
+        </div>
+        <div class="spec-item reveal-scale stagger-2">
+          <p class="spec-label">Drivetrain</p>
+          <p class="spec-value" id="specDrive">Rear-Wheel Drive</p>
+        </div>
+        <div class="spec-item reveal-scale stagger-3">
+          <p class="spec-label">Fuel Economy</p>
+          <p class="spec-value" id="specMpg">25 City / 32 Hwy</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dimensions Specs -->
+    <div class="specs-content" id="dimensions" style="display: none;">
+      <div class="specs-grid">
+        <div class="spec-item reveal-scale">
+          <p class="spec-label">Length</p>
+          <p class="spec-value" id="specLength">172.5 in</p>
+        </div>
+        <div class="spec-item reveal-scale stagger-1">
+          <p class="spec-label">Width</p>
+          <p class="spec-value" id="specWidth">73.0 in</p>
+        </div>
+        <div class="spec-item reveal-scale stagger-2">
+          <p class="spec-label">Height</p>
+          <p class="spec-value" id="specHeight">50.9 in</p>
+        </div>
+        <div class="spec-item reveal-scale stagger-3">
+          <p class="spec-label">Wheelbase</p>
+          <p class="spec-value" id="specWheelbase">97.2 in</p>
+        </div>
+        <div class="spec-item reveal-scale">
+          <p class="spec-label">Curb Weight</p>
+          <p class="spec-value" id="specWeight">3,400 lbs</p>
+        </div>
+        <div class="spec-item reveal-scale stagger-1">
+          <p class="spec-label">Cargo Capacity</p>
+          <p class="spec-value" id="specCargo">10.2 cu ft</p>
+        </div>
+        <div class="spec-item reveal-scale stagger-2">
+          <p class="spec-label">Seating</p>
+          <p class="spec-value" id="specSeating">2 Passengers</p>
+        </div>
+        <div class="spec-item reveal-scale stagger-3">
+          <p class="spec-label">Ground Clearance</p>
+          <p class="spec-value" id="specClearance">4.5 in</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Specs -->
+    <div class="specs-content" id="features" style="display: none;">
+      <div class="specs-grid">
+        <div class="spec-item reveal-scale">
+          <p class="spec-label">Infotainment</p>
+          <p class="spec-value" id="specInfo">8.8" Touchscreen</p>
+        </div>
+        <div class="spec-item reveal-scale stagger-1">
+          <p class="spec-label">Audio System</p>
+          <p class="spec-value" id="specAudio">10-Speaker JBL</p>
+        </div>
+        <div class="spec-item reveal-scale stagger-2">
+          <p class="spec-label">Connectivity</p>
+          <p class="spec-value" id="specConnect">Apple CarPlay & Android Auto</p>
+        </div>
+        <div class="spec-item reveal-scale stagger-3">
+          <p class="spec-label">Climate Control</p>
+          <p class="spec-value" id="specClimate">Dual-Zone Auto</p>
+        </div>
+        <div class="spec-item reveal-scale">
+          <p class="spec-label">Seats</p>
+          <p class="spec-value" id="specSeats">Heated Leather</p>
+        </div>
+        <div class="spec-item reveal-scale stagger-1">
+          <p class="spec-label">Wheels</p>
+          <p class="spec-value" id="specWheels">19" Alloy</p>
+        </div>
+        <div class="spec-item reveal-scale stagger-2">
+          <p class="spec-label">Lighting</p>
+          <p class="spec-value" id="specLights">LED Headlights</p>
+        </div>
+        <div class="spec-item reveal-scale stagger-3">
+          <p class="spec-label">Roof</p>
+          <p class="spec-value" id="specRoof">Carbon Fiber</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Safety Specs -->
+    <div class="specs-content" id="safety" style="display: none;">
+      <div class="specs-grid">
+        <div class="spec-item reveal-scale">
+          <p class="spec-label">Airbags</p>
+          <p class="spec-value" id="specAirbags">8 Standard</p>
+        </div>
+        <div class="spec-item reveal-scale stagger-1">
+          <p class="spec-label">Braking</p>
+          <p class="spec-value" id="specBrakes">4-Wheel Disc ABS</p>
+        </div>
+        <div class="spec-item reveal-scale stagger-2">
+          <p class="spec-label">Stability Control</p>
+          <p class="spec-value" id="specStability">Vehicle Stability Control</p>
+        </div>
+        <div class="spec-item reveal-scale stagger-3">
+          <p class="spec-label">Traction Control</p>
+          <p class="spec-value" id="specTraction">Active Traction</p>
+        </div>
+        <div class="spec-item reveal-scale">
+          <p class="spec-label">Collision Warning</p>
+          <p class="spec-value" id="specCollision">Pre-Collision System</p>
+        </div>
+        <div class="spec-item reveal-scale stagger-1">
+          <p class="spec-label">Lane Assist</p>
+          <p class="spec-value" id="specLane">Lane Departure Alert</p>
+        </div>
+        <div class="spec-item reveal-scale stagger-2">
+          <p class="spec-label">Cruise Control</p>
+          <p class="spec-value" id="specCruise">Full-Speed Dynamic Radar</p>
+        </div>
+        <div class="spec-item reveal-scale stagger-3">
+          <p class="spec-label">Camera</p>
+          <p class="spec-value" id="specCamera">Backup Camera</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Color Options -->
+  <section class="section" style="background: linear-gradient(180deg, var(--toyota-dark) 0%, #0f0f0f 100%);">
+    <div class="section-header reveal">
+      <p class="section-subtitle">Personalize</p>
+      <h2 class="section-title">COLOR OPTIONS</h2>
+    </div>
+    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+      <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 3rem;">
+        <div class="color-option reveal-scale" style="cursor: pointer;">
+          <div style="width: 80px; height: 80px; background: #FF0000; border-radius: 50%; margin: 0 auto 1rem; border: 3px solid transparent; transition: all 0.3s ease;" onmouseover="this.style.borderColor='white'; this.style.transform='scale(1.1)'" onmouseout="this.style.borderColor='transparent'; this.style.transform='scale(1)'"></div>
+          <p>Renaissance Red</p>
+        </div>
+        <div class="color-option reveal-scale stagger-1" style="cursor: pointer;">
+          <div style="width: 80px; height: 80px; background: #000000; border-radius: 50%; margin: 0 auto 1rem; border: 3px solid transparent; transition: all 0.3s ease;" onmouseover="this.style.borderColor='white'; this.style.transform='scale(1.1)'" onmouseout="this.style.borderColor='transparent'; this.style.transform='scale(1)'"></div>
+          <p>Absolute Zero</p>
+        </div>
+        <div class="color-option reveal-scale stagger-2" style="cursor: pointer;">
+          <div style="width: 80px; height: 80px; background: #C0C0C0; border-radius: 50%; margin: 0 auto 1rem; border: 3px solid transparent; transition: all 0.3s ease;" onmouseover="this.style.borderColor='white'; this.style.transform='scale(1.1)'" onmouseout="this.style.borderColor='transparent'; this.style.transform='scale(1)'"></div>
+          <p>Silver Metallic</p>
+        </div>
+        <div class="color-option reveal-scale stagger-3" style="cursor: pointer;">
+          <div style="width: 80px; height: 80px; background: #FFFFFF; border-radius: 50%; margin: 0 auto 1rem; border: 3px solid transparent; transition: all 0.3s ease;" onmouseover="this.style.borderColor='white'; this.style.transform='scale(1.1)'" onmouseout="this.style.borderColor='transparent'; this.style.transform='scale(1)'"></div>
+          <p>Phantom White</p>
+        </div>
+        <div class="color-option reveal-scale" style="cursor: pointer;">
+          <div style="width: 80px; height: 80px; background: #1a1a2e; border-radius: 50%; margin: 0 auto 1rem; border: 3px solid transparent; transition: all 0.3s ease;" onmouseover="this.style.borderColor='white'; this.style.transform='scale(1.1)'" onmouseout="this.style.borderColor='transparent'; this.style.transform='scale(1)'"></div>
+          <p>Deep Blue</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="background: linear-gradient(135deg, var(--toyota-red) 0%, #c41e3a 100%); text-align: center;">
+    <div class="reveal">
+      <h2 style="font-family: 'Orbitron', sans-serif; font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1.5rem;">READY TO OWN ONE?</h2>
+      <p style="font-size: 1.2rem; margin-bottom: 2.5rem; opacity: 0.9;">Configure your perfect Toyota and get exclusive offers</p>
+      <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html" class="btn" style="background: white; color: var(--toyota-red); border-color: white;">Get a Quote</a>
+        <a href="cars.html" class="btn" style="background: transparent; color: white; border: 2px solid white;">View All Models</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>TOYOTA</h3>
+        <p>Let's Go Places. Building the future of mobility since 1937.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Vehicles</h4>
+        <ul>
+          <li><a href="cars.html">All Vehicles</a></li>
+          <li><a href="cars.html">SUVs</a></li>
+          <li><a href="cars.html">Trucks</a></li>
+          <li><a href="cars.html">Sports Cars</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="services.html">Service Center</a></li>
+          <li><a href="parts.html">Genuine Parts</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:1-800-TOYOTA">1-800-TOYOTA</a></li>
+          <li><a href="mailto:info@toyota.com">info@toyota.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Toyota Motor Corporation. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/animations.js"></script>
+  <script>
+    // Car data
+    const carData = {
+      supra: {
+        name: 'SUPRA MK5',
+        category: 'Sports Car',
+        tagline: 'Pure driving pleasure. Uncompromising performance.',
+        price: '$55,000',
+        image: 'Supra MK5.png',
+        quickHp: '382 HP',
+        quickTorque: '368 lb-ft',
+        quickAccel: '3.9s',
+        quickMpg: '25 MPG',
+        specs: {
+          engine: '3.0L Inline-6 Turbo',
+          hp: '382 HP @ 5,800 RPM',
+          torque: '368 lb-ft @ 1,800 RPM',
+          trans: '8-Speed Automatic',
+          accel: '3.9 seconds',
+          topSpeed: '155 mph',
+          drive: 'Rear-Wheel Drive',
+          mpg: '25 City / 32 Hwy',
+          length: '172.5 in',
+          width: '73.0 in',
+          height: '50.9 in',
+          wheelbase: '97.2 in',
+          weight: '3,400 lbs',
+          cargo: '10.2 cu ft',
+          seating: '2 Passengers',
+          clearance: '4.5 in'
+        }
+      },
+      camry: {
+        name: 'CAMRY XSE',
+        category: 'Midsize Sedan',
+        tagline: 'Style meets substance. The perfect daily driver.',
+        price: '$33,000',
+        image: 'Camry XSE.png',
+        quickHp: '301 HP',
+        quickTorque: '267 lb-ft',
+        quickAccel: '5.8s',
+        quickMpg: '32 MPG',
+        specs: {
+          engine: '3.5L V6',
+          hp: '301 HP @ 6,600 RPM',
+          torque: '267 lb-ft @ 4,700 RPM',
+          trans: '8-Speed Automatic',
+          accel: '5.8 seconds',
+          topSpeed: '135 mph',
+          drive: 'Front-Wheel Drive',
+          mpg: '22 City / 32 Hwy',
+          length: '192.7 in',
+          width: '72.4 in',
+          height: '56.9 in',
+          wheelbase: '111.2 in',
+          weight: '3,570 lbs',
+          cargo: '15.1 cu ft',
+          seating: '5 Passengers',
+          clearance: '5.7 in'
+        }
+      },
+      rav4: {
+        name: 'R4 Prime',
+        category: 'Compact SUV',
+        tagline: 'Electrified adventure. Maximum efficiency.',
+        price: '$43,000',
+        image: 'R4 Prime.png',
+        quickHp: '302 HP',
+        quickTorque: '199 lb-ft',
+        quickAccel: '5.7s',
+        quickMpg: '94 MPGe',
+        specs: {
+          engine: '2.5L 4-Cyl Plug-in Hybrid',
+          hp: '302 HP Combined',
+          torque: '199 lb-ft',
+          trans: 'CVT Automatic',
+          accel: '5.7 seconds',
+          topSpeed: '112 mph',
+          drive: 'All-Wheel Drive',
+          mpg: '94 MPGe / 38 MPG',
+          length: '180.9 in',
+          width: '73.0 in',
+          height: '67.0 in',
+          wheelbase: '105.9 in',
+          weight: '4,300 lbs',
+          cargo: '33.5 cu ft',
+          seating: '5 Passengers',
+          clearance: '8.3 in'
+        }
+      },
+      landcruiser: {
+        name: 'Landcruiser',
+        category: 'Full-Size SUV',
+        tagline: 'Legendary capability. Unstoppable anywhere.',
+        price: '$85,000',
+        image: 'Landcruiser.png',
+        quickHp: '409 HP',
+        quickTorque: '479 lb-ft',
+        quickAccel: '6.7s',
+        quickMpg: '17 MPG',
+        specs: {
+          engine: '3.4L Twin-Turbo V6',
+          hp: '409 HP @ 5,200 RPM',
+          torque: '479 lb-ft @ 2,000 RPM',
+          trans: '10-Speed Automatic',
+          accel: '6.7 seconds',
+          topSpeed: '130 mph',
+          drive: '4WD with Crawl Control',
+          mpg: '14 City / 17 Hwy',
+          length: '196.5 in',
+          width: '78.0 in',
+          height: '74.0 in',
+          wheelbase: '112.2 in',
+          weight: '5,700 lbs',
+          cargo: '41.0 cu ft',
+          seating: '8 Passengers',
+          clearance: '9.1 in'
+        }
+      },
+      gr86: {
+        name: 'GR86',
+        category: 'Sports Coupe',
+        tagline: 'Lightweight precision. Pure driving joy.',
+        price: '$28,000',
+        image: 'https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=1000&q=80',
+        quickHp: '228 HP',
+        quickTorque: '184 lb-ft',
+        quickAccel: '6.1s',
+        quickMpg: '25 MPG',
+        specs: {
+          engine: '2.4L Flat-4',
+          hp: '228 HP @ 7,000 RPM',
+          torque: '184 lb-ft @ 3,700 RPM',
+          trans: '6-Speed Manual',
+          accel: '6.1 seconds',
+          topSpeed: '140 mph',
+          drive: 'Rear-Wheel Drive',
+          mpg: '20 City / 27 Hwy',
+          length: '167.9 in',
+          width: '69.9 in',
+          height: '51.6 in',
+          wheelbase: '101.4 in',
+          weight: '2,800 lbs',
+          cargo: '6.3 cu ft',
+          seating: '4 Passengers',
+          clearance: '5.1 in'
+        }
+      },
+      corolla: {
+        name: 'COROLLA HYBRID',
+        category: 'Compact Sedan',
+        tagline: 'Efficiency redefined. Reliability guaranteed.',
+        price: '$24,000',
+        image: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=1000&q=80',
+        quickHp: '138 HP',
+        quickTorque: '105 lb-ft',
+        quickAccel: '9.0s',
+        quickMpg: '53 MPG',
+        specs: {
+          engine: '1.8L 4-Cyl Hybrid',
+          hp: '138 HP Combined',
+          torque: '105 lb-ft',
+          trans: 'CVT Automatic',
+          accel: '9.0 seconds',
+          topSpeed: '112 mph',
+          drive: 'Front-Wheel Drive',
+          mpg: '53 City / 46 Hwy',
+          length: '182.3 in',
+          width: '70.1 in',
+          height: '56.5 in',
+          wheelbase: '106.3 in',
+          weight: '2,850 lbs',
+          cargo: '13.1 cu ft',
+          seating: '5 Passengers',
+          clearance: '5.1 in'
+        }
+      }
+    };
+
+    // Get URL parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const model = urlParams.get('model') || 'supra';
+
+    // Update page with car data
+    const car = carData[model] || carData.supra;
+    document.getElementById('carName').innerHTML = car.name.replace(' ', ' <span>') + '</span>';
+    document.getElementById('carCategory').textContent = car.category;
+    document.getElementById('carTagline').textContent = car.tagline;
+    document.getElementById('carPrice').innerHTML = car.price + ' <span style="font-size: 1rem; color: var(--toyota-silver);">Starting MSRP</span>';
+    document.getElementById('carImage').src = car.image;
+    document.getElementById('carImage').alt = car.name;
+
+    // Update quick specs
+    document.getElementById('quickHp').textContent = car.quickHp;
+    document.getElementById('quickTorque').textContent = car.quickTorque;
+    document.getElementById('quickAccel').textContent = car.quickAccel;
+    document.getElementById('quickMpg').textContent = car.quickMpg;
+
+    // Update detailed specs
+    document.getElementById('specEngine').textContent = car.specs.engine;
+    document.getElementById('specHp').textContent = car.specs.hp;
+    document.getElementById('specTorque').textContent = car.specs.torque;
+    document.getElementById('specTrans').textContent = car.specs.trans;
+    document.getElementById('spec060').textContent = car.specs.accel;
+    document.getElementById('specTopSpeed').textContent = car.specs.topSpeed;
+    document.getElementById('specDrive').textContent = car.specs.drive;
+    document.getElementById('specMpg').textContent = car.specs.mpg;
+    document.getElementById('specLength').textContent = car.specs.length;
+    document.getElementById('specWidth').textContent = car.specs.width;
+    document.getElementById('specHeight').textContent = car.specs.height;
+    document.getElementById('specWheelbase').textContent = car.specs.wheelbase;
+    document.getElementById('specWeight').textContent = car.specs.weight;
+    document.getElementById('specCargo').textContent = car.specs.cargo;
+    document.getElementById('specSeating').textContent = car.specs.seating;
+    document.getElementById('specClearance').textContent = car.specs.clearance;
+
+    // Tab functionality
+    const tabs = document.querySelectorAll('.spec-tab');
+    const contents = document.querySelectorAll('.specs-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        contents.forEach(c => c.style.display = 'none');
+        document.getElementById(tab.dataset.tab).style.display = 'block';
+
+        // Re-trigger animations
+        gsap.fromTo(`#${tab.dataset.tab} .spec-item`, 
+          { opacity: 0, y: 40, scale: 0.95 },
+          { opacity: 1, y: 0, scale: 1, duration: 0.5, stagger: 0.08, ease: 'power3.out' }
+        );
+      });
+    });
+  </script>
+</body>
+</html>

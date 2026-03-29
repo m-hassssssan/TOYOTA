@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | TOYOTA</title>
+  <meta name="description" content="Contact Toyota - Get in touch for sales, service, or general inquiries">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-logo">TOYOTA</div>
+    <div class="preloader-text">CONNECTING...</div>
+    <div class="loading-bar">
+      <div class="loading-progress"></div>
+    </div>
+  </div>
+
+  <div class="scanline"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">TOYOTA</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cars.html">Vehicles</a></li>
+      <li><a href="parts.html">Parts</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Get in Touch</a>
+    <div class="mobile-menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="cars.html">Vehicles</a>
+    <a href="parts.html">Parts</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Contact Hero -->
+  <section class="hero" style="min-height: 60vh; padding-top: 120px;">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-particles"></div>
+    
+    <div class="hero-content">
+      <p class="hero-subtitle">Get in Touch</p>
+      <h1 class="hero-title glitch" data-text="CONTACT">
+        <span>LET'S</span>
+        <span class="highlight">CONNECT</span>
+      </h1>
+      <p class="hero-description">
+        Whether you're interested in a new vehicle, need service, or have questions, 
+        we're here to help.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" style="background: linear-gradient(180deg, var(--toyota-dark) 0%, #0f0f0f 100%);">
+    <div class="contact-container">
+      <div class="contact-info reveal-left">
+        <h3 style="font-family: 'Orbitron', sans-serif; font-size: 2rem; margin-bottom: 1.5rem;">CONTACT INFORMATION</h3>
+        <p style="color: var(--toyota-silver); margin-bottom: 2rem;">Reach out to us through any of these channels. Our team is ready to assist you.</p>
+        
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="contact-details">
+            <h4>HEADQUARTERS</h4>
+            <p>Toyota Motor Sales, USA<br>6565 Headquarters Drive<br>Plano, Texas 75024</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="contact-details">
+            <h4>PHONE</h4>
+            <p>Sales: 1-800-GO-TOYOTA<br>Service: 1-800-TOYOTA-1</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-details">
+            <h4>EMAIL</h4>
+            <p>info@toyota.com<br>support@toyota.com</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div class="contact-details">
+            <h4>HOURS</h4>
+            <p>Mon-Fri: 8:00 AM - 8:00 PM<br>Sat: 9:00 AM - 6:00 PM</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 2rem;">
+          <h4 style="margin-bottom: 1rem;">FOLLOW US</h4>
+          <div class="footer-social">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form reveal-right">
+        <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.8rem; margin-bottom: 0.5rem;">SEND US A MESSAGE</h3>
+        <p style="color: var(--toyota-silver); margin-bottom: 2rem;">Fill out the form below and we'll get back to you shortly.</p>
+        
+        <form id="contactForm">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" required placeholder="John">
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" required placeholder="Doe">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="john@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+          </div>
+
+          <div class="form-group">
+            <label for="inquiry">Inquiry Type *</label>
+            <select id="inquiry" name="inquiry" required>
+              <option value="">Select an option</option>
+              <option value="sales">New Vehicle Sales</option>
+              <option value="service">Service Appointment</option>
+              <option value="parts">Parts & Accessories</option>
+              <option value="testdrive">Test Drive Request</option>
+              <option value="general">General Inquiry</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required placeholder="How can we help you?"></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane" style="margin-right: 0.5rem;"></i> SEND MESSAGE
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Locations -->
+  <section class="section" style="background: linear-gradient(180deg, #0f0f0f 0%, var(--toyota-dark) 100%);">
+    <div class="section-header reveal">
+      <p class="section-subtitle">Find Us</p>
+      <h2 class="section-title">DEALER LOCATIONS</h2>
+    </div>
+
+    <div style="max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+      <div class="reveal" style="background: linear-gradient(145deg, #1e1e1e, #151515); border-radius: 20px; overflow: hidden;">
+        <div style="height: 200px; background: linear-gradient(135deg, #333, #222); display: flex; align-items: center; justify-content: center;">
+          <i class="fas fa-map-marked-alt" style="font-size: 4rem; color: var(--toyota-red);"></i>
+        </div>
+        <div style="padding: 2rem;">
+          <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.3rem; margin-bottom: 0.5rem;">TOYOTA OF PLANO</h3>
+          <p style="color: var(--toyota-silver); margin-bottom: 1rem;"><i class="fas fa-map-marker-alt" style="color: var(--toyota-red); margin-right: 0.5rem;"></i> 1000 Auto Drive, Plano, TX 75024</p>
+          <p style="color: var(--toyota-silver); margin-bottom: 1rem;"><i class="fas fa-phone" style="color: var(--toyota-red); margin-right: 0.5rem;"></i> (972) 555-0100</p>
+          <p style="color: var(--toyota-silver); margin-bottom: 1.5rem;"><i class="fas fa-clock" style="color: var(--toyota-red); margin-right: 0.5rem;"></i> Mon-Sat: 8AM-8PM</p>
+          <a href="#" class="car-btn">Get Directions</a>
+        </div>
+      </div>
+
+      <div class="reveal stagger-1" style="background: linear-gradient(145deg, #1e1e1e, #151515); border-radius: 20px; overflow: hidden;">
+        <div style="height: 200px; background: linear-gradient(135deg, #333, #222); display: flex; align-items: center; justify-content: center;">
+          <i class="fas fa-map-marked-alt" style="font-size: 4rem; color: var(--toyota-red);"></i>
+        </div>
+        <div style="padding: 2rem;">
+          <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.3rem; margin-bottom: 0.5rem;">TOYOTA OF DALLAS</h3>
+          <p style="color: var(--toyota-silver); margin-bottom: 1rem;"><i class="fas fa-map-marker-alt" style="color: var(--toyota-red); margin-right: 0.5rem;"></i> 2610 Forest Ln, Dallas, TX 75234</p>
+          <p style="color: var(--toyota-silver); margin-bottom: 1rem;"><i class="fas fa-phone" style="color: var(--toyota-red); margin-right: 0.5rem;"></i> (214) 555-0200</p>
+          <p style="color: var(--toyota-silver); margin-bottom: 1.5rem;"><i class="fas fa-clock" style="color: var(--toyota-red); margin-right: 0.5rem;"></i> Mon-Sat: 8AM-8PM</p>
+          <a href="#" class="car-btn">Get Directions</a>
+        </div>
+      </div>
+
+      <div class="reveal stagger-2" style="background: linear-gradient(145deg, #1e1e1e, #151515); border-radius: 20px; overflow: hidden;">
+        <div style="height: 200px; background: linear-gradient(135deg, #333, #222); display: flex; align-items: center; justify-content: center;">
+          <i class="fas fa-map-marked-alt" style="font-size: 4rem; color: var(--toyota-red);"></i>
+        </div>
+        <div style="padding: 2rem;">
+          <h3 style="font-family: 'Orbitron', sans-serif; font-size: 1.3rem; margin-bottom: 0.5rem;">TOYOTA OF FRISCO</h3>
+          <p style="color: var(--toyota-silver); margin-bottom: 1rem;"><i class="fas fa-map-marker-alt" style="color: var(--toyota-red); margin-right: 0.5rem;"></i> 5959 Preston Rd, Frisco, TX 75034</p>
+          <p style="color: var(--toyota-silver); margin-bottom: 1rem;"><i class="fas fa-phone" style="color: var(--toyota-red); margin-right: 0.5rem;"></i> (469) 555-0300</p>
+          <p style="color: var(--toyota-silver); margin-bottom: 1.5rem;"><i class="fas fa-clock" style="color: var(--toyota-red); margin-right: 0.5rem;"></i> Mon-Sat: 8AM-8PM</p>
+          <a href="#" class="car-btn">Get Directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section" style="background: linear-gradient(180deg, var(--toyota-dark) 0%, #0f0f0f 100%);">
+    <div class="section-header reveal">
+      <p class="section-subtitle">Common Questions</p>
+      <h2 class="section-title">FREQUENTLY ASKED</h2>
+    </div>
+
+    <div style="max-width: 800px; margin: 0 auto;">
+      <div class="reveal" style="margin-bottom: 1rem;">
+        <details style="background: linear-gradient(145deg, #1e1e1e, #151515); border-radius: 10px; overflow: hidden;">
+          <summary style="padding: 1.5rem; cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+            How do I schedule a test drive?
+            <i class="fas fa-chevron-down"></i>
+          </summary>
+          <div style="padding: 0 1.5rem 1.5rem; color: var(--toyota-silver);">
+            You can schedule a test drive by filling out our contact form, calling your local dealer, or visiting any Toyota dealership. We'll confirm your appointment and have your preferred vehicle ready.
+          </div>
+        </details>
+      </div>
+
+      <div class="reveal stagger-1" style="margin-bottom: 1rem;">
+        <details style="background: linear-gradient(145deg, #1e1e1e, #151515); border-radius: 10px; overflow: hidden;">
+          <summary style="padding: 1.5rem; cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+            What financing options are available?
+            <i class="fas fa-chevron-down"></i>
+          </summary>
+          <div style="padding: 0 1.5rem 1.5rem; color: var(--toyota-silver);">
+            Toyota Financial Services offers a variety of financing and leasing options. Our team can help you find the best plan based on your budget and needs. Apply online or at any dealership.
+          </div>
+        </details>
+      </div>
+
+      <div class="reveal stagger-2" style="margin-bottom: 1rem;">
+        <details style="background: linear-gradient(145deg, #1e1e1e, #151515); border-radius: 10px; overflow: hidden;">
+          <summary style="padding: 1.5rem; cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+            How often should I service my Toyota?
+            <i class="fas fa-chevron-down"></i>
+          </summary>
+          <div style="padding: 0 1.5rem 1.5rem; color: var(--toyota-silver);">
+            We recommend service every 5,000 miles or 6 months, whichever comes first. This includes oil changes, tire rotations, and multi-point inspections. Check your owner's manual for specific recommendations.
+          </div>
+        </details>
+      </div>
+
+      <div class="reveal stagger-3" style="margin-bottom: 1rem;">
+        <details style="background: linear-gradient(145deg, #1e1e1e, #151515); border-radius: 10px; overflow: hidden;">
+          <summary style="padding: 1.5rem; cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+            What is ToyotaCare?
+            <i class="fas fa-chevron-down"></i>
+          </summary>
+          <div style="padding: 0 1.5rem 1.5rem; color: var(--toyota-silver);">
+            ToyotaCare is a no-cost maintenance plan that comes with every new Toyota for 2 years or 25,000 miles, whichever comes first. It includes factory-scheduled maintenance and 24/7 roadside assistance.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="background: linear-gradient(135deg, var(--toyota-red) 0%, #c41e3a 100%); text-align: center;">
+    <div class="reveal">
+      <h2 style="font-family: 'Orbitron', sans-serif; font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1.5rem;">STILL HAVE QUESTIONS?</h2>
+      <p style="font-size: 1.2rem; margin-bottom: 2.5rem; opacity: 0.9;">Our team is standing by to help you</p>
+      <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+        <a href="tel:1-800-TOYOTA" class="btn" style="background: white; color: var(--toyota-red); border-color: white;"><i class="fas fa-phone"></i> Call Now</a>
+        <a href="#" class="btn" style="background: transparent; color: white; border: 2px solid white;"><i class="fas fa-comments"></i> Live Chat</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>TOYOTA</h3>
+        <p>Let's Go Places. Building the future of mobility since 1937.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Vehicles</h4>
+        <ul>
+          <li><a href="cars.html">All Vehicles</a></li>
+          <li><a href="cars.html">SUVs</a></li>
+          <li><a href="cars.html">Trucks</a></li>
+          <li><a href="cars.html">Sports Cars</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="services.html">Service Center</a></li>
+          <li><a href="parts.html">Genuine Parts</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:1-800-TOYOTA">1-800-TOYOTA</a></li>
+          <li><a href="mailto:info@toyota.com">info@toyota.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Toyota Motor Corporation. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/animations.js"></script>
+  <script>
+    // Form submission
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Show success message
+      const btn = this.querySelector('.submit-btn');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '<i class="fas fa-check"></i> MESSAGE SENT!';
+      btn.style.background = '#28a745';
+      
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+        btn.style.background = '';
+        this.reset();
+      }, 3000);
+    });
+  </script>
+</body>
+</html>
